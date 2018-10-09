@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title></title>
+
+    <script src="../libs/jquery-3.3.1/jquery-3.3.1.js"></script>
+    <script src="../libs/jquery-ui/jquery-ui.js"></script>
+
+    <script src="../libs/three.js/three.js"></script>
+
+    <script src="../libs/tween.js/tween.js"></script>
+    <script src="../libs/keyframe.js/keyframe.js"></script>
+
+    <script src="../libs/three.js/loaders/GLTFLoader.js"></script>
+    <script src="../libs/three.js/utils/cloneFBX.js"></script>
+
+    <script src="threejsInteraction.js"></script>
+
+    <script type="text/javascript">
+      window.onload = (state)=>{
+        let canvas = document.getElementById("webglcanvas");
+        createScene(canvas);
+        run();
+      };
+    </script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="gameContainer">
+      <div id="container">
+        <canvas id="webglcanvas"></canvas>
+      </div>
+      <div class="overlay">
+
+      </div>
+      <div class="controls">
+        <h1>Tiempo: <span id="timeLabel">0</span> s</h1>
+        <h1>Puntos: <span id="pointsLabel">0</span> </h1>
+        <button type="button" id="playButton">JUGAR</button>
+        <button type="button" id="resetButton">REINICIAR</button>
+      </div>
+    </div>
+  </body>
+</html>
