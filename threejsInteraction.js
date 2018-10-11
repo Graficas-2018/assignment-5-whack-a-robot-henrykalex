@@ -1,3 +1,4 @@
+// Enrique Alejandro Mondragón Tayabas A01019108
 var container;
 var camera, scene, raycaster, renderer;
 var mouse = new THREE.Vector2(), INTERSECTED, CLICKED;
